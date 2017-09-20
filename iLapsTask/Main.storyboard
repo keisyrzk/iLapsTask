@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="O9f-fD-U3I">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List View Controller-->
+        <scene sceneID="EOj-hW-PgB">
+            <objects>
+                <viewController id="O9f-fD-U3I" customClass="ListViewController" customModule="iLapsTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jpZ-Qp-Bbk"/>
+                        <viewControllerLayoutGuide type="bottom" id="T6w-Bk-nlt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H8t-L6-LSW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLE Devices" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJK-cs-y15">
+                                <rect key="frame" x="16" y="30" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Epe-TC-Xh4">
+                                <rect key="frame" x="16" y="74" width="343" height="593"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="KKn-oA-6m2">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KKn-oA-6m2" id="SlT-v1-Nww">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Epe-TC-Xh4" firstAttribute="top" secondItem="XJK-cs-y15" secondAttribute="bottom" constant="20" id="I2e-QG-TIB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Epe-TC-Xh4" secondAttribute="trailing" id="KDA-Uz-TO6"/>
+                            <constraint firstItem="XJK-cs-y15" firstAttribute="top" secondItem="jpZ-Qp-Bbk" secondAttribute="bottom" constant="10" id="Slh-N3-qMK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XJK-cs-y15" secondAttribute="trailing" id="pC6-B9-Yif"/>
+                            <constraint firstItem="T6w-Bk-nlt" firstAttribute="top" secondItem="Epe-TC-Xh4" secondAttribute="bottom" id="w4Q-LE-LNh"/>
+                            <constraint firstItem="Epe-TC-Xh4" firstAttribute="leading" secondItem="H8t-L6-LSW" secondAttribute="leadingMargin" id="y42-RR-wqX"/>
+                            <constraint firstItem="XJK-cs-y15" firstAttribute="leading" secondItem="H8t-L6-LSW" secondAttribute="leadingMargin" id="zFN-84-zJg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bleTitleLabel" destination="XJK-cs-y15" id="H9j-tz-uNB"/>
+                        <outlet property="tableView" destination="Epe-TC-Xh4" id="quQ-2g-Mbk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZiF-Nk-KRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="201"/>
+        </scene>
+    </scenes>
+</document>

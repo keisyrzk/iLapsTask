@@ -1,0 +1,26 @@
+/* 
+  Localizable.string.strings
+  iLapsTask
+
+  Created by keisyrzk on 19.09.2017.
+  Copyright © 2017 keisyrzk. All rights reserved.
+*/
+
+"lr_login_title" = "Login";
+"lr_register_title" = "Register";
+
+"l_title" = "Log in with your e-mail";
+"r_title" = "Register with your e-mail";
+"l_login_button_title" = "Log in";
+"r_register_button_title" = "Register";
+
+"global_email_title" = "E-mail";
+"global_password_title" = "Password";
+"global_error" = "Error";
+
+"main_ble_title" = "BLE Devices";
+
+"alert_retry_button_title" = "Retry";
+"alert_ok_button_title" = "Ok";
+"alert_email_and_password" = "Please enter your email and password";
+"alert_ble_message" = "Bluetooth is OFF. Please turn the bluetooth on and try again";
